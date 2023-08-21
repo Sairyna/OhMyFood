@@ -17,7 +17,7 @@ header {
         padding: 2%;
         margin: 3%;
 
-        @media (min-width: 600px) {
+        @media (min-width: 901px) {
             margin: 0
         }
     }
@@ -29,9 +29,13 @@ header {
         flex-direction: row;
         box-shadow: inset 0px 4px 5px rgb(206, 205, 205);
 
-        @media (min-width: 600px) {
+        @media (min-width: 768px) {
             width: 110%;
         }
+        
+    @media (min-width: 700px) and (max-width:900px) {
+        width: 115%;
+    }
 
         p {
             font-size: 16px;
@@ -51,7 +55,7 @@ header {
     width: 105%;
     margin-left: -2%;
 
-    @media (min-width: 600px) {
+    @media (min-width: 768px) {
         width: 110%;
     }
 
@@ -63,7 +67,7 @@ header {
         font-size: 24px;
         font-weight: 700;
 
-        @media (min-width: 600px) {
+        @media (min-width: 901px) {
             font-size: 40px;
             padding: 0;
         }
@@ -76,7 +80,7 @@ header {
         text-align: center;
         margin-top: -1%;
 
-        @media (min-width: 600px) {
+        @media (min-width: 901px) {
             margin-top: 1%;
         }
     }
@@ -95,10 +99,14 @@ header {
         box-shadow: 0px 5px 15px 0px #00000040;
         border: none;
 
-        @media (min-width: 600px) {
+        @media (min-width: 901px) {
             width: 20%;
             margin-top: 1%;
             margin-bottom: 3%;
+        }
+
+        @media (min-width: 768px) and (max-width:900px) {
+            width: 30%;
         }
 
         &:hover {
@@ -116,7 +124,7 @@ h2 {
     margin-left: 3%;
     margin-top: 10%;
 
-    @media (min-width: 600px) {
+    @media (min-width: 901px) {
         margin-top: 5%;
     }
 }
@@ -127,7 +135,7 @@ h2 {
     .liste {
         flex-direction: column;
 
-        @media (min-width: 600px) {
+        @media (min-width: 901px) {
             flex-direction: row;
             margin-top: 5%;
             margin-left: 5%;
@@ -146,7 +154,7 @@ h2 {
             display: flex;
             align-items: center;
 
-            @media (min-width: 600px) {
+            @media (min-width: 901px) {
                 width: 25%;
                 margin-right: 5%;
             }
@@ -165,7 +173,7 @@ h2 {
                 color: white;
                 background-color: #9356DC;
                 border-radius: 100px;
-                width: 10%;
+                width: 30px;
                 height: 41%;
                 position: relative;
                 top: 0px;
@@ -181,7 +189,7 @@ h2 {
     width: 105%;
     margin-left: -2%;
 
-    @media (min-width: 600px) {
+    @media (min-width: 768px) {
         width: 110%;
     }
 
@@ -190,11 +198,16 @@ h2 {
         padding-top: 15%;
         margin-top: 15%;
 
-        @media (min-width: 600px) {
+        @media (min-width: 901px) {
             margin-top: 0;
             padding-top: 3%;
             margin-left: 7%;
             margin-bottom: -0.5%;
+        }
+
+        @media (min-width: 768px) and (max-width:900px) {
+            margin: 2%;
+            padding: 3%;
         }
     }
 
@@ -203,11 +216,15 @@ h2 {
         padding: 3%;
         padding-top: 0;
 
-        @media (min-width: 600px) {
+        @media (min-width: 768px) {
             display: grid;
             grid-template-rows: 1fr 1fr;
             grid-template-columns: 1fr 1fr;
             margin-left: 7%;
+        }
+
+        @media (min-width: 700px) and (max-width:900px) {
+            margin-left: 2%;
         }
 
         div {
@@ -219,7 +236,7 @@ h2 {
             margin-left: -2%;
             font-family: $font;
 
-            @media (min-width: 600px) {
+            @media (min-width: 901px) {
                 width: 80%;
                 height: 280px;
                 margin-bottom: 5%;
@@ -257,7 +274,7 @@ h2 {
                 top: -35px;
                 left: 280px;
 
-                @media (min-width: 600px) {
+                @media (min-width: 901px) {
                     top: -40px;
                     left: 440px;
                 }
@@ -277,7 +294,7 @@ h2 {
                 bottom: 270px;
                 left: 220px;
 
-                @media (min-width: 600px) {
+                @media (min-width: 901px) {
                     left: 330px;
                 }
             }
@@ -291,20 +308,23 @@ footer {
     margin-left: -2%;
     padding: 3%;
 
-    @media (min-width: 600px) {
+    @media (min-width: 901px) {
         display: flex;
         flex-direction: row-reverse;
         align-items: end;
         padding-bottom: 7px;
     }
-
+    
+    @media (min-width: 700px) and (max-width:900px) {
+        width: 104%;
+    }
     img {
         filter: invert(100%);
         width: 35%;
         margin-left: 2%;
         margin-top: 5%;
 
-        @media (min-width: 600px) {
+        @media (min-width: 901px) {
             width: 10%;
             height: 30px;
             position: relative;
@@ -317,17 +337,18 @@ footer {
         display: flex;
         flex-direction: column;
 
-        @media (min-width: 600px) {
+        @media (min-width: 901px) {
             flex-direction: row;
             margin-right: 10%;
         }
+
         p {
             font-family: $font;
             color: white;
             font-weight: 500;
             height: 5px;
-            
-            @media (min-width: 600px) {
+
+            @media (min-width: 901px) {
                 white-space: nowrap;
                 margin-right: 5%;
                 padding: 1%;
@@ -339,4 +360,8 @@ footer {
 
 body {
     width: 95%;
+    
+    @media (min-width: 700px) and (max-width:900px) {
+        width: 92%;
+    }
 }

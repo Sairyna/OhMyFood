@@ -13,7 +13,7 @@ header img {
   padding: 2%;
   margin: 3%;
 }
-@media (min-width: 600px) {
+@media (min-width: 901px) {
   header img {
     margin: 0;
   }
@@ -25,9 +25,14 @@ header nav {
   flex-direction: row;
   box-shadow: inset 0px 4px 5px rgb(206, 205, 205);
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   header nav {
     width: 110%;
+  }
+}
+@media (min-width: 700px) and (max-width: 900px) {
+  header nav {
+    width: 115%;
   }
 }
 header nav p {
@@ -45,7 +50,7 @@ header nav i {
   width: 105%;
   margin-left: -2%;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .intro {
     width: 110%;
   }
@@ -58,7 +63,7 @@ header nav i {
   font-size: 24px;
   font-weight: 700;
 }
-@media (min-width: 600px) {
+@media (min-width: 901px) {
   .intro h1 {
     font-size: 40px;
     padding: 0;
@@ -71,7 +76,7 @@ header nav i {
   text-align: center;
   margin-top: -1%;
 }
-@media (min-width: 600px) {
+@media (min-width: 901px) {
   .intro p {
     margin-top: 1%;
   }
@@ -90,11 +95,16 @@ header nav i {
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2509803922);
   border: none;
 }
-@media (min-width: 600px) {
+@media (min-width: 901px) {
   .intro input {
     width: 20%;
     margin-top: 1%;
     margin-bottom: 3%;
+  }
+}
+@media (min-width: 768px) and (max-width: 900px) {
+  .intro input {
+    width: 30%;
   }
 }
 .intro input:hover {
@@ -109,7 +119,7 @@ h2 {
   margin-left: 3%;
   margin-top: 10%;
 }
-@media (min-width: 600px) {
+@media (min-width: 901px) {
   h2 {
     margin-top: 5%;
   }
@@ -121,7 +131,7 @@ h2 {
 .fonctionnement .liste {
   flex-direction: column;
 }
-@media (min-width: 600px) {
+@media (min-width: 901px) {
   .fonctionnement .liste {
     flex-direction: row;
     margin-top: 5%;
@@ -141,7 +151,7 @@ h2 {
   display: flex;
   align-items: center;
 }
-@media (min-width: 600px) {
+@media (min-width: 901px) {
   .fonctionnement .liste .liste_num {
     width: 25%;
     margin-right: 5%;
@@ -159,7 +169,7 @@ h2 {
   color: white;
   background-color: #9356DC;
   border-radius: 100px;
-  width: 10%;
+  width: 30px;
   height: 41%;
   position: relative;
   top: 0px;
@@ -172,7 +182,7 @@ h2 {
   width: 105%;
   margin-left: -2%;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .Restaurants {
     width: 110%;
   }
@@ -182,7 +192,7 @@ h2 {
   padding-top: 15%;
   margin-top: 15%;
 }
-@media (min-width: 600px) {
+@media (min-width: 901px) {
   .Restaurants h2 {
     margin-top: 0;
     padding-top: 3%;
@@ -190,17 +200,28 @@ h2 {
     margin-bottom: -0.5%;
   }
 }
+@media (min-width: 768px) and (max-width: 900px) {
+  .Restaurants h2 {
+    margin: 2%;
+    padding: 3%;
+  }
+}
 .Restaurants .ensemble {
   flex-direction: column;
   padding: 3%;
   padding-top: 0;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .Restaurants .ensemble {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     margin-left: 7%;
+  }
+}
+@media (min-width: 700px) and (max-width: 900px) {
+  .Restaurants .ensemble {
+    margin-left: 2%;
   }
 }
 .Restaurants .ensemble div {
@@ -212,7 +233,7 @@ h2 {
   margin-left: -2%;
   font-family: "Roboto", sans-serif;
 }
-@media (min-width: 600px) {
+@media (min-width: 901px) {
   .Restaurants .ensemble div {
     width: 80%;
     height: 280px;
@@ -247,7 +268,7 @@ h2 {
   top: -35px;
   left: 280px;
 }
-@media (min-width: 600px) {
+@media (min-width: 901px) {
   .Restaurants .ensemble div i {
     top: -40px;
     left: 440px;
@@ -267,7 +288,7 @@ h2 {
   bottom: 270px;
   left: 220px;
 }
-@media (min-width: 600px) {
+@media (min-width: 901px) {
   .Restaurants .ensemble div .nouveau {
     left: 330px;
   }
@@ -279,12 +300,17 @@ footer {
   margin-left: -2%;
   padding: 3%;
 }
-@media (min-width: 600px) {
+@media (min-width: 901px) {
   footer {
     display: flex;
     flex-direction: row-reverse;
     align-items: end;
     padding-bottom: 7px;
+  }
+}
+@media (min-width: 700px) and (max-width: 900px) {
+  footer {
+    width: 104%;
   }
 }
 footer img {
@@ -293,7 +319,7 @@ footer img {
   margin-left: 2%;
   margin-top: 5%;
 }
-@media (min-width: 600px) {
+@media (min-width: 901px) {
   footer img {
     width: 10%;
     height: 30px;
@@ -306,7 +332,7 @@ footer div {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 600px) {
+@media (min-width: 901px) {
   footer div {
     flex-direction: row;
     margin-right: 10%;
@@ -318,7 +344,7 @@ footer div p {
   font-weight: 500;
   height: 5px;
 }
-@media (min-width: 600px) {
+@media (min-width: 901px) {
   footer div p {
     white-space: nowrap;
     margin-right: 5%;
@@ -329,4 +355,9 @@ footer div p {
 
 body {
   width: 95%;
+}
+@media (min-width: 700px) and (max-width: 900px) {
+  body {
+    width: 92%;
+  }
 }/*# sourceMappingURL=styles.css.map */
