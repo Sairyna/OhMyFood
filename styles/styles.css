@@ -330,6 +330,7 @@ body {
 .restau {
   margin: 0;
   width: 100%;
+  height: auto;
 }
 .restau header nav {
   padding: 5%;
@@ -376,11 +377,16 @@ body {
   bottom: 75px;
   background-color: #F6F6F6;
 }
-@media (min-width: 901px) {
+@media (min-width: 1200px) {
   .restau main {
     width: 70%;
     bottom: 95px;
     left: 200px;
+  }
+}
+@media (min-width: 901px) {
+  .restau main {
+    bottom: 95px;
   }
 }
 @media (min-width: 700px) and (max-width: 900px) {
@@ -450,7 +456,7 @@ body {
   font-weight: 300;
   padding-left: 5%;
   margin-top: -4%;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
   font-size: 14px;
 }
 .restau main section div .prix {
@@ -459,11 +465,11 @@ body {
   color: #353535;
   position: relative;
   bottom: 15px;
-  left: 280px;
+  margin-left: 85%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .restau main section div .prix {
-    left: 600px;
+    bottom: 25px;
   }
 }
 .restau main input {
@@ -498,6 +504,12 @@ body {
   .fa-heart {
     left: 750px;
     bottom: 110px;
+  }
+}
+@media (min-width: 1200px) {
+  .fa-heart {
+    left: 1000px;
+    bottom: 130px;
   }
 }
 @media (min-width: 700px) and (max-width: 900px) {

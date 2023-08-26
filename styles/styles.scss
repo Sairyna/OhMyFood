@@ -348,6 +348,7 @@ body {
 .restau {
     margin: 0;
     width: 100%;
+    height: auto;
 
     header {
 
@@ -395,10 +396,14 @@ body {
         bottom: 75px;
         background-color: $background;
 
-        @media (min-width: 901px) {
+        @media (min-width: 1200px) {
             width: 70%;
             bottom: 95px;
             left: 200px
+        }
+
+        @media (min-width: 901px) {
+            bottom: 95px;
         }
 
         @media (min-width: 700px) and (max-width:900px) {
@@ -467,7 +472,7 @@ body {
                     font-weight: 300;
                     padding-left: 5%;
                     margin-top: -4%;
-                    margin-bottom: 2%;
+                    margin-bottom: 4%;
                     font-size: 14px;
                 }
 
@@ -477,10 +482,10 @@ body {
                     color: #353535;
                     position: relative;
                     bottom: 15px;
-                    left: 280px;
+                    margin-left: 85%;
 
-                    @media (min-width: 768px) {
-                        left: 600px;
+                    @media (min-width: 1200px) {
+                        bottom: 25px;
                     }
                 }
 
@@ -517,6 +522,11 @@ body {
     @media (min-width: 901px) {
         left: 750px;
         bottom: 110px;
+    }
+
+    @media (min-width: 1200px) {
+        left: 1000px;
+        bottom: 130px;
     }
 
     @media (min-width: 700px) and (max-width:900px) {
