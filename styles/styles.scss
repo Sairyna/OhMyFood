@@ -1,12 +1,12 @@
 $font: 'Roboto', sans-serif;
 $background: #F6F6F6;
 
-
 .flex_center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .btn {
     border-radius: 60px;
     width: 55%;
@@ -36,6 +36,7 @@ $background: #F6F6F6;
         box-shadow: 0px 5px 20px 0px #00000040;
     }
 }
+
 .accueil {
 
 
@@ -338,6 +339,7 @@ footer {
         }
     }
 }
+
 body {
     width: 100%;
     margin: 0;
@@ -414,25 +416,9 @@ body {
                 justify-content: center;
                 padding: 5%;
             }
+
             @media (min-width: 700px) and (max-width:900px) {
                 margin-left: 0;
-            }
-        }
-
-        i {
-            font-size: 27px;
-            position: relative;
-            bottom: 55px;
-            left: 320px;
-
-            @media (min-width: 901px) {
-                left: 750px;
-                bottom: 110px;
-            }
-
-            @media (min-width: 700px) and (max-width:900px) {
-                left: 550px;
-                bottom: 90px;
             }
         }
 
@@ -446,6 +432,7 @@ body {
                 padding-right: 15%;
                 margin-bottom: 12%;
             }
+
             h2 {
                 font-family: $font;
                 font-weight: 300;
@@ -456,7 +443,7 @@ body {
 
             }
 
-            div{
+            div {
                 background-color: white;
                 border-radius: 25px;
                 width: 95%;
@@ -487,7 +474,7 @@ body {
                 .prix {
                     font-size: 16px;
                     font-weight: 500;
-                    color:#353535;
+                    color: #353535;
                     position: relative;
                     bottom: 15px;
                     left: 280px;
@@ -499,6 +486,7 @@ body {
 
             }
         }
+
         input {
             margin-left: 22%;
 
@@ -511,11 +499,41 @@ body {
             }
         }
     }
-footer {
-    margin-top: -20%;
 
-    @media (min-width: 901px) {
-        margin-top: -6%;
+    footer {
+        margin-top: -20%;
+
+        @media (min-width: 901px) {
+            margin-top: -6%;
+        }
     }
 }
+.fa-heart {
+    font-size: 27px;
+    position: relative;
+    bottom: 55px;
+    left: 320px;
+
+    @media (min-width: 901px) {
+        left: 750px;
+        bottom: 110px;
+    }
+
+    @media (min-width: 700px) and (max-width:900px) {
+        left: 550px;
+        bottom: 90px;
+    }
+
+    &:hover {
+        font-weight: 900;
+        background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+        background-clip: border-box;
+        -ms-background-clip: text;
+        -o-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+
+    }
 }

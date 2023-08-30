@@ -406,24 +406,6 @@ body {
     margin-left: 0;
   }
 }
-.restau main i {
-  font-size: 27px;
-  position: relative;
-  bottom: 55px;
-  left: 320px;
-}
-@media (min-width: 901px) {
-  .restau main i {
-    left: 750px;
-    bottom: 110px;
-  }
-}
-@media (min-width: 700px) and (max-width: 900px) {
-  .restau main i {
-    left: 550px;
-    bottom: 90px;
-  }
-}
 .restau main section {
   margin-left: 3%;
   margin-bottom: 15%;
@@ -504,4 +486,34 @@ body {
   .restau footer {
     margin-top: -6%;
   }
+}
+
+.fa-heart {
+  font-size: 27px;
+  position: relative;
+  bottom: 55px;
+  left: 320px;
+}
+@media (min-width: 901px) {
+  .fa-heart {
+    left: 750px;
+    bottom: 110px;
+  }
+}
+@media (min-width: 700px) and (max-width: 900px) {
+  .fa-heart {
+    left: 550px;
+    bottom: 90px;
+  }
+}
+.fa-heart:hover {
+  font-weight: 900;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-clip: border-box;
+  -ms-background-clip: text;
+  -o-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }/*# sourceMappingURL=styles.css.map */
