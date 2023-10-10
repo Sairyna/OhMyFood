@@ -1,0 +1,305 @@
+@charset "UTF-8";
+/*animation*/
+@keyframes loader {
+  100% {
+    opacity: 0%;
+    z-index: -10;
+  }
+}
+@keyframes apparition {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes heart {
+  100% {
+    opacity: 0;
+  }
+}
+/*BASE*/
+body {
+  font-family: "Roboto";
+  display: grid;
+  width: 100%;
+  margin: auto;
+}
+body h1 {
+  font-family: "Shrikhand";
+}
+body h2 {
+  padding-left: 2%;
+  font-size: 1.8em;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  /*box-shadow: 0px 4px  5px #292929;*/
+  padding: 2% 2% 2% 2%;
+  height: 3em;
+  align-items: center;
+}
+header .header__content {
+  display: flex;
+  justify-content: center;
+}
+header .header__content--logo {
+  margin: auto;
+  grid-column: 2/3;
+  width: 15em;
+}
+header .header__index {
+  display: none;
+}
+header .header__arrow {
+  font-size: 3em;
+  color: black;
+  text-decoration: none;
+}
+
+footer {
+  background: #313131;
+  color: #f9fafa;
+  padding: 30px 30px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+footer #footer__logo {
+  font-family: "Shrikhand";
+  color: #ffffff;
+  margin: 0rem 0rem 1rem 0rem;
+  font-size: 2rem;
+  font-weight: normal;
+}
+footer .footer__texte {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer .footer__icon {
+  margin-right: 15px;
+}
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/*PAGE D'ACCEUL*/
+#localisation {
+  background: #dadada;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+#localisation .map {
+  margin-right: 1.6em;
+}
+
+#Explorer {
+  background: rgba(241, 241, 241, 0.9647058824);
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  height: 110%;
+  padding: 0 2em 4em 2em;
+}
+#Explorer h2 {
+  margin-bottom: 0em;
+}
+#Explorer__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6em;
+  text-align: center;
+}
+#Explorer__bouton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  width: 16em;
+  margin: auto;
+  border-radius: 60px;
+  box-shadow: 1px 1px 12px #c1c7c7;
+  font-size: 1.3em;
+}
+#Explorer__bouton:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  box-shadow: 1px 1px 12px #8b8f8f;
+}
+
+/*partie fonctionnement*/
+.Fonctionnement {
+  margin: 7em 0 5em 0;
+  padding-top: 2%;
+}
+.Fonctionnement h2 {
+  margin-bottom: 2em;
+}
+.Fonctionnement__display {
+  display: flex;
+  flex-direction: row;
+}
+.Fonctionnement__content {
+  display: flex;
+  height: 6em;
+  width: 77%;
+  max-width: 23em;
+  border-radius: 23px;
+  padding: 5px;
+  background: rgba(241, 241, 241, 0.9647058824);
+  box-shadow: 1px 1px 12px #c1c7c7;
+  margin: auto;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+.Fonctionnement__content--number {
+  display: flex;
+  justify-content: center;
+  background: #9356DC;
+  align-items: center;
+  /* display: flex; */
+  width: 68px;
+  height: 68px;
+  border-radius: 41px;
+  color: white;
+  margin-left: -46px;
+}
+.Fonctionnement__content--text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4em;
+  margin-left: 20%;
+}
+.Fonctionnement__content--text i {
+  margin-left: -2.5em;
+  color: #757575;
+}
+.Fonctionnement__content--text .txtfonc {
+  margin-left: 2em;
+}
+
+/*carte des différent restaurant*/
+.Restaurant {
+  background: rgba(241, 241, 241, 0.9647058824);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0fr 1fr 1fr;
+}
+.Restaurant #Restaurant__grid--1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.Restaurant #Restaurant__grid--2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.Restaurant #Restaurant__grid--3 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.Restaurant #Restaurant__grid--4 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.Restaurant .Restaurant__link {
+  text-decoration: none;
+  color: black;
+}
+
+.Restaurant__content {
+  height: 14em;
+  width: 85%;
+  border-radius: 20px;
+  background: #FFFFFF;
+  box-shadow: 1px 1px 12px #C1C7C7;
+  margin: auto;
+  margin-bottom: 4%;
+}
+.Restaurant__content:hover {
+  background: #f5f5f5;
+  box-shadow: 1px 1px 12px #C1C7C7;
+}
+.Restaurant__content:hover .Restaurant__content--hearts .heartless {
+  background: #f5f5f5;
+}
+.Restaurant__content--new {
+  display: flex;
+  justify-content: flex-end;
+}
+.Restaurant__content--new .new__bloc {
+  background-color: #9ce2d1;
+  color: #195a4a;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  position: absolute;
+  margin: 1em 1em 0em 0em;
+}
+.Restaurant__content .bloc__content {
+  display: flex;
+  justify-content: space-between;
+}
+.Restaurant__content--img {
+  width: 100%;
+  height: 130px;
+  border-radius: 15px 15px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  margin: auto;
+}
+.Restaurant__content--text {
+  padding-left: 2%;
+}
+.Restaurant__content--text h3 {
+  margin-bottom: -3%;
+  margin-top: 7%;
+}
+.Restaurant__content--hearts {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  padding-right: 4%;
+}
+.Restaurant__content--hearts .heartless {
+  color: rgba(165, 165, 165, 0.9647058824);
+  font-weight: lighter;
+  position: absolute;
+  background: #ffffff;
+}
+.Restaurant__content--hearts .heart_hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  -ms-background-clip: text;
+  -o-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.Restaurant__content--hearts:hover .heartless {
+  animation: heart 0.5s;
+  animation-fill-mode: both;
+}
+.Restaurant__content--hearts:hover .heart_hover {
+  display: block;
+}/*# sourceMappingURL=stylesheet.css.map */
