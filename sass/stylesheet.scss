@@ -70,11 +70,7 @@ body {
         width: 3em;
         height: 3em;
 
-        -webkit-animation: spin 3s linear infinite;
-        -o-animation: spin 3s linear infinite;
-        animation: spin 1s linear infinite;
-
-        
+        animation: spin 1s linear infinite;        
         margin: auto;
         position: absolute;
         left: 0; right: 0; top: 0; bottom: 0;
