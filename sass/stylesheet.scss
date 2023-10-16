@@ -459,6 +459,10 @@ footer {
                 text-overflow: ellipsis;
                 overflow: hidden;
             }
+
+            p {
+                font-weight: 100;
+            }
         
         }
         
@@ -659,9 +663,14 @@ footer {
         max-height: 18rem;
         width: 100%;
     }
+
+    .menu-container  {
+        // width: 100%;
+    }
     
     .menu {
         margin-top: -4rem;
+        // width: 100%;
     }
 }
 
@@ -671,4 +680,35 @@ footer {
     padding: 5%;
     max-width: 20em;
     } 
+}
+
+@media  screen and (min-width: 1290px) {
+
+    .menu__titre {
+        justify-content: center;
+        width: 100%;
+
+        h1 {
+            margin-right: 10px;
+        }
+      }
+
+      .menu__entre, .menu__plat, .menu__dessert {
+        width: 60%;
+        margin: auto;
+      }
+
+    .menu-container {
+        display: flex;
+        width: 100%;
+    }
+
+    .menu {
+        width: 70%;
+        margin: auto;
+        margin-top: -5%;
+        max-width: 1150px;
+        
+    }
+    
 }
