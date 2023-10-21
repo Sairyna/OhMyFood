@@ -44,6 +44,10 @@ body h2 {
   font-size: 1.8em;
 }
 
+.fa-store {
+  color: #9356DC;
+}
+
 .loader {
   background-color: rgba(241, 241, 241, 0.4862745098);
   width: 100%;
@@ -353,7 +357,8 @@ footer a {
   align-items: center;
   padding-right: 1.5em;
 }
-.menu__titre #menu__titre--icon, .menu__titre #menu__titre--icon2 {
+.menu__titre #menu__titre--icon,
+.menu__titre #menu__titre--icon2 {
   font-size: 1em;
   margin-right: -1em;
 }
@@ -401,7 +406,8 @@ footer a {
   overflow: hidden;
   flex: 1;
 }
-.menu__select--titre h4, .menu__select--titre p {
+.menu__select--titre h4,
+.menu__select--titre p {
   margin: 0rem;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -589,7 +595,9 @@ footer a {
   .menu__titre h1 {
     margin-right: 10px;
   }
-  .menu__entre, .menu__plat, .menu__dessert {
+  .menu__entre,
+  .menu__plat,
+  .menu__dessert {
     width: 60%;
     margin: auto;
   }
