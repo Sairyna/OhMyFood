@@ -36,7 +36,9 @@
 }
 
 /*BASE*/
-
+a {
+    text-decoration: none;
+}
 body {
     font-family: 'Roboto';
     display: grid;
@@ -49,12 +51,9 @@ body {
 
     h2 {
         padding-left: 2%;
-        font-size: 1.8em;
+        padding-left: 7%;
+        font-size: 1.9em;
     }
-}
-
-.fa-store {
-    color: #9356DC;
 }
 
 .loader {
@@ -86,6 +85,15 @@ body {
     }
 }
 
+header .header__content--logo {
+    width: 10em;
+}
+
+header .header__arrow {
+    margin-left: 1em;
+    font-size: 1.5em;
+}
+
 header {
     display: grid;
     grid-template-columns: 20% 60% 20%;
@@ -111,7 +119,7 @@ header {
     }
 
     .header__arrow {
-        font-size: 3em;
+        font-size: 2em;
         color: black;
         text-decoration: none;
     }
@@ -136,6 +144,10 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
+
+        p {
+            margin-bottom: 10px;
+        }
     }
 
     .footer__icon {
@@ -156,7 +168,8 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 1.5em;
+    font-size: 1em;
+        font-weight: lighter;
 
     .map {
         margin-right: 1.6em;
@@ -170,6 +183,7 @@ footer {
     justify-content: center;
     height: 110%;
     padding: 0 2em 4em 2em;
+    padding: 0 2em 2em 2em;
 
     h2 {
         margin-bottom: 0em;
@@ -180,7 +194,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 1.6em;
+        font-size: 1.1em;
         text-align: center;
     }
 
@@ -195,11 +209,11 @@ footer {
         margin: auto;
         border-radius: 60px;
         box-shadow: 1px 1px 12px #c1c7c7;
-        font-size: 1.3em;
+        font-size: 1em;
 
         &:hover {
-            background: linear-gradient(#9356DC, #FF79DA);
-            box-shadow: 1px 1px 12px #8b8f8f;
+            filter: opacity(85%);
+            box-shadow: 2px 2px 15px #8b8f8f;
         }
     }
 }
@@ -209,6 +223,12 @@ footer {
 .Fonctionnement {
     margin: 7em 0 5em 0;
     padding-top: 2%;
+    font-size: 0.7em;
+
+    .fa-store {
+        color: #9356DC;
+    }
+
 
     h2 {
         margin-bottom: 2em;
@@ -216,14 +236,12 @@ footer {
 
     &__display {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     &__content {
         display: flex;
         height: 6em;
-        width: 77%;
-        max-width: 23em;
         border-radius: 23px;
         padding: 5px;
         background: #f1f1f1f6;
@@ -231,18 +249,20 @@ footer {
         margin: auto;
         margin-bottom: 60px;
         font-weight: bold;
+        width: 75%;
+        max-width: 38em;
+
 
         &--number {
             display: flex;
             justify-content: center;
             background: #9356DC;
             align-items: center;
-            /* display: flex; */
-            width: 68px;
-            height: 68px;
             border-radius: 41px;
             color: white;
-            margin-left: -46px;
+            width: 50px;
+            height: 50px;
+            margin-left: -2em;
         }
 
         &--text {
@@ -254,7 +274,6 @@ footer {
             margin-left: 20%;
 
             i {
-                margin-left: -2.5em;
                 color: #757575;
             }
 
@@ -269,36 +288,34 @@ footer {
 /*carte des différent restaurant*/
 
 .Restaurant {
-    background: #f1f1f1f6;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.1em;
+    margin-top: -10%;
 
-    #Restaurant__grid--1 {
-        grid-column: 1/2;
-        grid-row: 2/3;
+    &__content {
+        height: 14em;
+        width: 85%;
+
+        &--text p {
+            font-weight: lighter;
+        }
+
+        &--text h3 {
+            font-weight: bold;
+        }
+
+        &--text {
+            padding-left: 4%;
+        }
     }
 
-    #Restaurant__grid--2 {
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-
-    #Restaurant__grid--3 {
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-
-    #Restaurant__grid--4 {
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-
-    .Restaurant__link {
-        text-decoration: none;
-        color: black;
+    &__content--img {
+        height: 66%;
     }
 }
+
 
 .Restaurant__content {
     height: 14em;
@@ -348,7 +365,8 @@ footer {
     }
 
     &--text {
-        padding-left: 2%;
+        color: black;
+        text-decoration: none;
     }
 
     &--text h3 {
@@ -395,7 +413,7 @@ footer {
 .background__image {
     object-fit: cover;
     max-width: 100%;
-    max-height: 30em;
+    max-height: 18rem;
     width: 100%;
 }
 
@@ -405,7 +423,7 @@ footer {
     background: #f1f1f1;
     padding: 1% 4% 1%;
     border-radius: 2rem 2rem 0rem 0rem;
-    margin-top: -3rem;
+    margin-top: -4rem;
 
     &__titre {
         display: flex;
@@ -533,8 +551,8 @@ footer {
     font-size: 1em;
 
     &:hover {
-        background: linear-gradient(#9356DC, #FF79DA);
-        box-shadow: 1px 1px 12px #8b8f8f;
+        filter: opacity(70%);
+        box-shadow: 2px 2px 15px #8b8f8f;
     }
 }
 
@@ -576,131 +594,6 @@ footer {
     }
 }
 
-
-/*BREACKPOINT 2 : MOBILE*/
-@media screen and (max-width: 767px) {
-
-    body {
-        font-size: 1.1em;
-
-        h2 {
-            padding-left: 7%;
-            font-size: 1.4em;
-        }
-    }
-
-    header .header__content--logo {
-        width: 10em;
-    }
-
-    header .header__arrow {
-        margin-left: 1em;
-        font-size: 1.5em;
-    }
-
-    /*page d'acceuil*/
-
-    #localisation {
-        font-size: 1em;
-        font-weight: lighter;
-    }
-
-    #Explorer {
-        padding: 0 2em 2em 2em;
-
-
-        &__text {
-            font-size: 1.1em;
-        }
-
-        &__bouton {
-            font-size: 1em;
-        }
-    }
-
-    .Fonctionnement {
-        padding-top: 2%;
-        font-size: 0.7em;
-
-        h2 {
-            font-size: 1.9em;
-        }
-
-        &__display {
-            display: flex;
-            flex-direction: column;
-        }
-
-        &__content {
-            width: 75%;
-            max-width: 38em;
-
-            &--text i {
-                margin-left: -2em;
-            }
-
-            &--number {
-                width: 50px;
-                height: 50px;
-                margin-left: -2em;
-            }
-
-            &--text .txtfonc {
-                margin-left: 1em;
-                margin-right: -1em;
-            }
-        }
-
-    }
-
-    .Restaurant {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 1.1em;
-
-        &__content {
-            height: 14em;
-            width: 85%;
-
-            &--text p {
-                font-weight: lighter;
-            }
-
-            &--text h3 {
-                font-weight: bold;
-            }
-
-            &--text {
-                padding-left: 4%;
-            }
-        }
-
-        &__content--img {
-            height: 66%;
-        }
-    }
-
-
-    /*page restau*/
-
-    .background__image {
-        object-fit: cover;
-        max-width: 100%;
-        max-height: 18rem;
-        width: 100%;
-    }
-
-    .menu-container {
-        // width: 100%;
-    }
-
-    .menu {
-        margin-top: -4rem;
-        // width: 100%;
-    }
-}
-
 @media screen and (max-width: 460px) {
 
     .menu__select {
@@ -711,6 +604,10 @@ footer {
 
 @media screen and (min-width: 1290px) {
 
+    body {
+        
+    font-size: 1.1em;
+    }
     .menu__titre {
         justify-content: center;
         width: 100%;
@@ -719,7 +616,41 @@ footer {
             margin-right: 10px;
         }
     }
-
+    .Restaurant {
+        background: #f1f1f1f6;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0fr 1fr 1fr;
+        margin-top: 0;
+    
+        #Restaurant__grid--1 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+    
+        #Restaurant__grid--2 {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+    
+        #Restaurant__grid--3 {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+    
+        #Restaurant__grid--4 {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+    
+        .Restaurant__link {
+            text-decoration: none;
+            color: black;
+        }
+        .Restaurant__content {
+            width: 65%;
+        }
+    }
     .menu__entre,
     .menu__plat,
     .menu__dessert {
@@ -739,5 +670,27 @@ footer {
         max-width: 1150px;
 
     }
+    .background__image {
+        object-fit: cover;
+        max-width: 100%;
+        max-height: 30rem;
+        width: 100%;
+    }
+    i {
+        margin-left: -2.5em;
+    }
+    .Fonctionnement {
+        &__display {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    #footer_bloc {
+        display: flex;
+        flex-direction: row;
+    }
 
+    .icon__check {
+        margin: auto;
+    }
 }
