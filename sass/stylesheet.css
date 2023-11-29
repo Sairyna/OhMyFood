@@ -549,6 +549,10 @@ footer a {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0fr 1fr 1fr;
     margin-top: 0;
+    padding: 0 9%;
+  }
+  .Restaurant__content--img {
+    height: 200px;
   }
   .Restaurant #Restaurant__grid--1 {
     grid-column: 1/2;
@@ -571,7 +575,9 @@ footer a {
     color: black;
   }
   .Restaurant .Restaurant__content {
-    width: 65%;
+    width: 85%;
+    margin-bottom: 55px;
+    height: 90%;
   }
   .menu__entre,
   .menu__plat,
@@ -599,6 +605,11 @@ footer a {
   .Fonctionnement__display {
     display: flex;
     flex-direction: row;
+    width: 80%;
+    margin: auto;
+  }
+  .Fonctionnement h2 {
+    margin-left: 3%;
   }
   .icon__check {
     margin: auto;

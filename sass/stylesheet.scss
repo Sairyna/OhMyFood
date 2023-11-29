@@ -650,6 +650,11 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0fr 1fr 1fr;
         margin-top: 0;
+        padding: 0 9%;
+
+        &__content--img {
+            height: 200px;
+        }
 
         #Restaurant__grid--1 {
             grid-column: 1/2;
@@ -677,7 +682,9 @@ footer {
         }
 
         .Restaurant__content {
-            width: 65%;
+            width: 85%;
+            margin-bottom: 55px;
+            height: 90%;
         }
     }
 
@@ -712,6 +719,12 @@ footer {
         &__display {
             display: flex;
             flex-direction: row;
+            width: 80%;
+            margin: auto;
+        }
+
+        h2 {
+            margin-left: 3%;
         }
     }
 
