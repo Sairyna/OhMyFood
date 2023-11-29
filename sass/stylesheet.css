@@ -260,6 +260,7 @@ footer a {
 }
 .Restaurant__content--text p {
   font-weight: lighter;
+  margin-top: 10px;
 }
 .Restaurant__content--text h3 {
   font-weight: bold;
@@ -272,7 +273,7 @@ footer a {
 }
 
 .Restaurant__content {
-  height: 14em;
+  height: 11.5em;
   width: 85%;
   border-radius: 20px;
   background: #FFFFFF;
