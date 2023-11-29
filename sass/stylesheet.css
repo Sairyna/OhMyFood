@@ -197,7 +197,7 @@ footer a {
   padding-top: 2%;
   font-size: 0.7em;
 }
-.Fonctionnement .fa-store {
+.Fonctionnement .fa-store:hover {
   color: #9356DC;
 }
 .Fonctionnement h2 {
@@ -574,9 +574,6 @@ footer a {
     max-width: 100%;
     max-height: 30rem;
     width: 100%;
-  }
-  i {
-    margin-left: -2.5em;
   }
   .Fonctionnement__display {
     display: flex;

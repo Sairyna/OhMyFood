@@ -225,7 +225,7 @@ footer {
     padding-top: 2%;
     font-size: 0.7em;
 
-    .fa-store {
+    .fa-store:hover {
         color: #9356DC;
     }
 
@@ -675,9 +675,6 @@ footer {
         max-width: 100%;
         max-height: 30rem;
         width: 100%;
-    }
-    i {
-        margin-left: -2.5em;
     }
     .Fonctionnement {
         &__display {
