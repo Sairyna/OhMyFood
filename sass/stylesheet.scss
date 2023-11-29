@@ -39,6 +39,7 @@
 a {
     text-decoration: none;
 }
+
 body {
     font-family: 'Roboto';
     display: grid;
@@ -169,7 +170,7 @@ footer {
     align-items: center;
     justify-content: center;
     font-size: 1em;
-        font-weight: lighter;
+    font-weight: lighter;
 
     .map {
         margin-right: 1.6em;
@@ -605,9 +606,34 @@ footer {
 @media screen and (min-width: 1290px) {
 
     body {
+        font-size: 1.1em;
+
         
-    font-size: 1.1em;
+    .footer_desk {
+        display: flex;
+        flex-direction: row;
+        margin-right: 4em;
+        align-items: center;
+        
+        p{
+            margin-right: 3em;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+
+        a {
+            font-size: 18px;
+            font-weight: lighter;
+        }
     }
+
+    footer {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    }
+
     .menu__titre {
         justify-content: center;
         width: 100%;
@@ -616,41 +642,44 @@ footer {
             margin-right: 10px;
         }
     }
+
     .Restaurant {
         background: #f1f1f1f6;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0fr 1fr 1fr;
         margin-top: 0;
-        
+
         #Restaurant__grid--1 {
             grid-column: 1/2;
             grid-row: 2/3;
         }
-    
+
         #Restaurant__grid--2 {
             grid-column: 2/3;
             grid-row: 2/3;
         }
-    
+
         #Restaurant__grid--3 {
             grid-column: 1/2;
             grid-row: 3/4;
         }
-    
+
         #Restaurant__grid--4 {
             grid-column: 2/3;
             grid-row: 3/4;
         }
-    
+
         .Restaurant__link {
             text-decoration: none;
             color: black;
         }
+
         .Restaurant__content {
             width: 65%;
         }
     }
+
     .menu__entre,
     .menu__plat,
     .menu__dessert {
@@ -670,21 +699,19 @@ footer {
         max-width: 1150px;
 
     }
+
     .background__image {
         object-fit: cover;
         max-width: 100%;
         max-height: 30rem;
         width: 100%;
     }
+
     .Fonctionnement {
         &__display {
             display: flex;
             flex-direction: row;
         }
-    }
-    #footer_bloc {
-        display: flex;
-        flex-direction: row;
     }
 
     .icon__check {
@@ -693,5 +720,5 @@ footer {
 
     .Restaurant__content--hearts {
         justify-content: end;
-      }
+    }
 }

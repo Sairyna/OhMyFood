@@ -515,6 +515,26 @@ footer a {
   body {
     font-size: 1.1em;
   }
+  body .footer_desk {
+    display: flex;
+    flex-direction: row;
+    margin-right: 4em;
+    align-items: center;
+  }
+  body .footer_desk p {
+    margin-right: 3em;
+    font-size: 18px;
+    font-weight: lighter;
+  }
+  body .footer_desk a {
+    font-size: 18px;
+    font-weight: lighter;
+  }
+  body footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
   .menu__titre {
     justify-content: center;
     width: 100%;
@@ -576,10 +596,6 @@ footer a {
     width: 100%;
   }
   .Fonctionnement__display {
-    display: flex;
-    flex-direction: row;
-  }
-  #footer_bloc {
     display: flex;
     flex-direction: row;
   }
