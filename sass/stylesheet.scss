@@ -622,7 +622,7 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0fr 1fr 1fr;
         margin-top: 0;
-    
+        
         #Restaurant__grid--1 {
             grid-column: 1/2;
             grid-row: 2/3;
@@ -693,4 +693,8 @@ footer {
     .icon__check {
         margin: auto;
     }
+
+    .Restaurant__content--hearts {
+        justify-content: end;
+      }
 }

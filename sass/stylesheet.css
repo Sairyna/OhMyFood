@@ -589,4 +589,7 @@ footer a {
   .icon__check {
     margin: auto;
   }
+  .Restaurant__content--hearts {
+    justify-content: end;
+  }
 }/*# sourceMappingURL=stylesheet.css.map */
